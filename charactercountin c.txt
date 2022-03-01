@@ -1,0 +1,16 @@
+Character count in c:
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char str[1000],C;
+    int i, count=0;
+    fgets(str,1000,stdin);
+    C=getchar();
+    for(i=0;str[i];i++)
+    {
+        if(str[i] == C)
+        count++;
+    }
+    printf("%d",count);
+}
